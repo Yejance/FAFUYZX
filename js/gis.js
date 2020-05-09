@@ -31,7 +31,7 @@
 
             var map1 = new Map({
                 basemap: "dark-gray-vector",
-                layers: [flayer,layer]
+                layers: [layer]
             });
 
             var view1 = new MapView({
@@ -47,12 +47,12 @@
                 layerInfos: [
                     {
                         layer: layer,
-                        title: "重庆公交线路图例"
+                        title: "GDP生产总值"
                     }
                 ]
             });
 
-            //view1.ui.add(legend1, "bottom-right");
+            view1.ui.add(legend1, "bottom-right");
 
             var scaleBar1 = new ScaleBar({
                 view: view1,
